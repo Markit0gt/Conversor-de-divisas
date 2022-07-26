@@ -1,22 +1,76 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-body{
-    background-color: purple;
-}
-header{
-    width: 100%;
-    text-align: center;
-}
-header h1{
-    margin-bottom: 20px;
-    margin-top: 10px;
-    color: wheat;
-    font-size: 40px;
-}
-header h2{
-    border-bottom: 2px solid white;
-    color: wheat;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
+body {
+  background-color: #210814;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-top: 15px;
+  color: wheat;
+}
+
+header h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin-top: 50px;
+}
+
+main .container .box1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .container .box1 #moneda {
+  width: 650px;
+  height: 40px;
+}
+
+main .container .box2 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main .container .box2 .input_moneda {
+  width: 40px;
+  height: 32px;
+}
+
+main .container .box3 {
+  width: 100%;
+}
+
+main .container .box3 #btn_convertir {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 80px;
+}
+
+main .container .box3 h2 {
+  font-size: 50px;
+  color: wheat;
+}
+
+main .container .box3 p {
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */

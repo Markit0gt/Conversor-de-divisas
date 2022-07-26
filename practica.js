@@ -1,19 +1,26 @@
-let moneda = prompt('Escribir que moneda desea convertir (USD/EUR)')
-let dinero = prompt('ingrese la cantidad de dinero');
-const monedas = [
-    {moneda: "dolar", value: "268"},
-    {moneda: "euro", value: "288"},
-];
-(function convertir (){
-    if (moneda == "usd"){
-        let resultado = dinero * monedas[0].value;
-        console.log("el resultado de dolares a argentino es: ", resultado);
+
+
+let dinero = document.getElementById("moneda");
+
+let resultado =0;
+
+
+
+let btn_convertir = document.getElementById("btn_convertir")
+btn_convertir.addEventListener("click", function(){
+    const monedas = [{moneda: "dolar", value: "320"},
+    {moneda: "euro", value: "288"},];
+    if (document.getElementById("dolar").checked){
+        resultado = dinero.value * monedas[0].value;
+        let resultado_mensaje= document.getElementById("resultado").innerHTML = resultado;
     }
-    else if (moneda == "eur"){
-        let resultado = dinero * monedas[1].value;
-        console.log("el resultado de euro a argentino es; ", resultado);
+    else if (document.getElementById("euro").checked){
+        resultado = dinero.value * monedas[1].value;
+        let resultado_mensaje= document.getElementById("resultado").innerHTML = resultado;
     }
     else{
-        alert("error al convertir")
+        let resultado_mensaje= document.getElementById("resultado").innerHTML = "error al elegir la moneda!";
     }
-})();
+});
+
+
