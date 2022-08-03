@@ -1,7 +1,5 @@
 
 
-
-
 let dinero = document.getElementById("moneda");
 let resultado = 0;
 
@@ -33,10 +31,29 @@ btn_convertir.addEventListener("click", function(){
         let historialbox= document.getElementById("historial");
         let p= document.createElement('p');
         if (document.getElementById("dolar").checked){
-        p.innerHTML = dinero.value + "$ USD ==> ARS: " + historialres;
+        p.innerHTML = dinero.value + "$ USD → ARS: " + historialres;
     }
     else if(document.getElementById("euro").checked){
-        p.innerHTML = dinero.value + "€ EUR ==> ARS: " + historialres;
+        p.innerHTML = dinero.value + "€ EUR → ARS: " + historialres;
     }
     historialbox.append(p);
 }
+
+let alertausd = document.getElementById("dolar");
+alertausd.addEventListener("click", function(){
+    Toastify({
+        text: "Cuidado el dolar esta re salado",
+        duration: 2000,
+        gravity: "top",
+        position: "left",
+    }).showToast();
+});
+let alertaeur = document.getElementById("euro");
+alertaeur.addEventListener("click", function(){
+    Toastify({
+        text: "El euro tambien esta carisimo!",
+        duration: 2000,
+        gravity: "top",
+        position: "left",
+    }).showToast();
+});
