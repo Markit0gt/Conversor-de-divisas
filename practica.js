@@ -31,7 +31,12 @@ btn_convertir.addEventListener("click", function(){
         let resultadost = sessionStorage.setItem(`resultado`, resultado);
         let historialres= sessionStorage.getItem("resultado");
         let historialbox= document.getElementById("historial");
-        let p= document.createElement(`p`);
-        p.innerHTML = historialres;
-        historialbox.append(p);
+        let p= document.createElement('p');
+        if (document.getElementById("dolar").checked){
+        p.innerHTML = "USD ==> ARS: " + historialres;
+    }
+    else if(document.getElementById("euro").checked){
+        p.innerHTML = "EUR ==> ARS: " + historialres;
+    }
+    historialbox.append(p);
 }
