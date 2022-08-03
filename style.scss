@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
     background-color: #210814;
@@ -46,6 +47,10 @@ main{
                 color: white;
                 font-size: 30px;
                 border-bottom: 2px solid black;
+            }
+            p{
+                color: white;
+                font-size: 22px;
             }
         }
         .box2{

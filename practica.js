@@ -33,10 +33,10 @@ btn_convertir.addEventListener("click", function(){
         let historialbox= document.getElementById("historial");
         let p= document.createElement('p');
         if (document.getElementById("dolar").checked){
-        p.innerHTML = "USD ==> ARS: " + historialres;
+        p.innerHTML = dinero.value + "$ USD ==> ARS: " + historialres;
     }
     else if(document.getElementById("euro").checked){
-        p.innerHTML = "EUR ==> ARS: " + historialres;
+        p.innerHTML = dinero.value + "€ EUR ==> ARS: " + historialres;
     }
     historialbox.append(p);
 }

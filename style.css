@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -64,6 +65,11 @@ main .container .box4 h3 {
   color: white;
   font-size: 30px;
   border-bottom: 2px solid black;
+}
+
+main .container .box4 p {
+  color: white;
+  font-size: 22px;
 }
 
 main .container .box2 {
