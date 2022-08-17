@@ -1,22 +1,33 @@
+$color1: rgb(212, 243, 255);
+$color2: rgb(8, 66, 226);
+$fontcolor: rgb(255, 196, 0);
 *{
     margin: 0%;
     padding: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: #210814;
+    background-color: $color1;
 }
 header{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1{
         font-size: 50px;
         margin-top: 15px;
-        color: wheat;
+        color: $fontcolor;
     }
-    h2{
-        margin-top: 40px;
-        font-size: 20px;
-        color: whitesmoke;
+    .img-cont{
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        img{
+            width: 100%;
+        }
     }
 }
 main{
@@ -42,14 +53,14 @@ main{
             margin-right: 20px;
             grid-row: 1/3;
             grid-column: 2;
-            background-color: gray;
+            background-color: whitesmoke;
             h3{
-                color: white;
+                color: $color2;
                 font-size: 30px;
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid $color2;
             }
             p{
-                color: white;
+                color: $fontcolor;
                 font-size: 22px;
             }
         }
@@ -58,29 +69,41 @@ main{
             margin-bottom: 50px;
             grid-row: 2;
             grid-column: 1;
-            color: white;
-            .input_moneda{
-                width: 40px;
-                height: 32px;
+            color: black;
+            .taza-de-cambio{
+                margin-right: 550px;
+                button{
+                    border: solid 2px black;
+                    font-size: 15px;
+                    height: 45px;
+                    width: 90px;
+                    margin: 25px;
+                    color: white;
+                    background-color: $color2;
+                    border-radius: 6px;
+                    &:hover{
+                        background-color: $fontcolor;
+                        color: white;
+                    }
+                }
             }
-        }
-        .box3{
-            width: 100%;
-            grid-row: 3;
-            grid-column: 1;
-            #btn_convertir{
-                width: 200px;
-                height: 60px;
-                margin-bottom: 80px;
-            }
-            h2{
-                font-size: 50px;
-                color: wheat;
-            }
-            p{
-                font-size: 25px;
-                color: white;
-                margin-top: 10px;
+            .moneda{
+                padding: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                select{
+                    padding: 15px 30px 15px 15px;
+                    font-size: 15px;
+                    border-radius: 4px;
+                    border: 1px solid $color2;
+                }
+                input{
+                    border: 0;
+                    font-size: 40px;
+                    text-align: right;
+                    border-radius: 3px;
+                }
             }
         }
     }
