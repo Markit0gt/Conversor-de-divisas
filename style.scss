@@ -1,5 +1,6 @@
 $color1: rgb(212, 243, 255);
-$color2: rgb(8, 66, 226);
+$color2: rgb(89, 131, 247);
+$color3: rgb(25, 84, 247);
 $fontcolor: rgb(255, 196, 0);
 *{
     margin: 0%;
@@ -54,14 +55,30 @@ main{
             grid-row: 1/3;
             grid-column: 2;
             background-color: whitesmoke;
-            h3{
-                color: $color2;
-                font-size: 30px;
-                border-bottom: 2px solid $color2;
-            }
-            p{
-                color: $fontcolor;
-                font-size: 22px;
+            .historialbox{
+                border-bottom: 2px solid $color3;
+                h3{
+                    color: $color2;
+                    font-size: 30px;;
+                }
+                p{
+                    color: black;
+                    font-size: 22px;
+                }
+                #btn-hist{
+                    border: solid 2px black;
+                    margin: 5px;
+                    font-size: 15px;
+                    height: 45px;
+                    width: 90px;
+                    color: white;
+                    background-color: $color2;
+                    border-radius: 6px;
+                    &:hover{
+                        background-color: $color3;
+                        color: white;
+                    }
+                }
             }
         }
         .box2{
@@ -72,7 +89,7 @@ main{
             color: black;
             .taza-de-cambio{
                 margin-right: 550px;
-                button{
+                #taza{
                     border: solid 2px black;
                     font-size: 15px;
                     height: 45px;
@@ -82,7 +99,7 @@ main{
                     background-color: $color2;
                     border-radius: 6px;
                     &:hover{
-                        background-color: $fontcolor;
+                        background-color: $color3;
                         color: white;
                     }
                 }

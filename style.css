@@ -85,15 +85,34 @@ main .container .box4 {
   background-color: whitesmoke;
 }
 
-main .container .box4 h3 {
-  color: #0842e2;
-  font-size: 30px;
-  border-bottom: 2px solid #0842e2;
+main .container .box4 .historialbox {
+  border-bottom: 2px solid #1954f7;
 }
 
-main .container .box4 p {
-  color: #ffc400;
+main .container .box4 .historialbox h3 {
+  color: #5983f7;
+  font-size: 30px;
+}
+
+main .container .box4 .historialbox p {
+  color: black;
   font-size: 22px;
+}
+
+main .container .box4 .historialbox #btn-hist {
+  border: solid 2px black;
+  margin: 5px;
+  font-size: 15px;
+  height: 45px;
+  width: 90px;
+  color: white;
+  background-color: #5983f7;
+  border-radius: 6px;
+}
+
+main .container .box4 .historialbox #btn-hist:hover {
+  background-color: #1954f7;
+  color: white;
 }
 
 main .container .box2 {
@@ -110,19 +129,19 @@ main .container .box2 .taza-de-cambio {
   margin-right: 550px;
 }
 
-main .container .box2 .taza-de-cambio button {
+main .container .box2 .taza-de-cambio #taza {
   border: solid 2px black;
   font-size: 15px;
   height: 45px;
   width: 90px;
   margin: 25px;
   color: white;
-  background-color: #0842e2;
+  background-color: #5983f7;
   border-radius: 6px;
 }
 
-main .container .box2 .taza-de-cambio button:hover {
-  background-color: #ffc400;
+main .container .box2 .taza-de-cambio #taza:hover {
+  background-color: #1954f7;
   color: white;
 }
 
@@ -143,7 +162,7 @@ main .container .box2 .moneda select {
   padding: 15px 30px 15px 15px;
   font-size: 15px;
   border-radius: 4px;
-  border: 1px solid #0842e2;
+  border: 1px solid #5983f7;
 }
 
 main .container .box2 .moneda input {
